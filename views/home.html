@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+    <head>
+        <titel>
+          
+        </titel>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+      </head>
+    <body>
+          <div>
+            <div class="logo_nav">
+                <img src="assets/image/download.png"\>
+                <div class= "account"> &#128100; <button class="button button5"><a href="/login"> Account </a></button></div>  
+              </div>
+          </div>
+          <div class="topnav">
+              <a class="elements" href="/">&#x1F3E0; HOME</a>
+              <a href="/service">&#x1F5D2; OUR SERVICE</a>
+              <a href="/booking">&#x1F698; BOOKING</a>
+              <a href="/contact">&#x1F4F3; CONTACT</a>
+              <a href="/faq">&#x1F914; FAQ</a>
+              <a href="/about">&#x1F57A; ABOUT</a>
+          </div>
+              
+      
+          <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img src="assets/image/03-2013-ford-mustang-gt-convertible-review.jpg">
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext"> 2 / 4</div>
+              <img src="assets/image/images.jpeg">
+            </div>  
+            <div class="mySlides fade">
+              <div class="numbertext"> 3 / 4</div>
+              <img src="assets/image/download (1).png">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext"> 4 / 4</div>
+              <img src="assets/image/download.jpeg">
+            </div>
+          </div>
+          <br>
+          <div style="text-align:center">
+             <span class="dot"></span> 
+             <span class="dot"></span> 
+             <span class="dot"></span> 
+             <span class="dot"></span> 
+          </div>
+        <footer>
+          <div>
+          <img src="assets/image/download.png"\>
+            <p> We provide customers with national car rental that are tailored to meet their needs.</p>
+          </div>
+          <div class="contact_us">
+            <div> &#x1F4DE; 02-6202065</div>
+            <div>&#x1F4F3; 0776530917 & 0790547484</div>
+            <div>&#x1F4E7; wafaakhawaldah@gmail.com</div>
+
+
+          </div>
+          <div>
+            
+          </div>
+
+        </footer> 
+        <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script>      
+    </body>
+</html>
