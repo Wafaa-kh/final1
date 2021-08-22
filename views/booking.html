@@ -1,7 +1,6 @@
 <!DOCTYPE html>
     <head>
         <titel>
-          
         </titel>
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,8 +25,19 @@
               <a href="#faq">&#x1F914; FAQ</a>
               <a href="#about">&#x1F57A; ABOUT</a>
           </div>
-          
+          <section id="filterSection">
+            <form class="select">
+                <select name="car" id="car">
+                    <option selected disabled value="car">Choose a car </option>
+
+                </select>
+                
+                    <button id='submitbtn' type="submit">submit</button> 
+            </form>
+        </section>
+        <section id="models"></section>
    <section id='carsCard'></section>
+ 
     <script src="../assets/js/bookingMainPage.js"></script>
 </body>
 </html>
